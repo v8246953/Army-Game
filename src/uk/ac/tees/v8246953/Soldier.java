@@ -11,10 +11,10 @@ package uk.ac.tees.v8246953;
  */
 public abstract class Soldier implements Killable{
     
-    private Faction faction = Faction.NOD;
+    public Faction faction = Faction.NOD;
     
-    public Soldier(String fac){
-        Faction faction = Faction.valueOf(fac);
+    public Soldier(Faction fac){
+        this.faction = fac;
     }
     
     public int getPoints(){
