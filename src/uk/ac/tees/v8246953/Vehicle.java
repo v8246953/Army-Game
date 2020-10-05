@@ -9,6 +9,14 @@ package uk.ac.tees.v8246953;
  *
  * @author v8246953
  */
-public abstract class Vehicle {
+public abstract class Vehicle implements Killable{
+    private Faction faction = Faction.NOD;
     
+    public Vehicle(String fac){
+        Faction faction = Faction.valueOf(fac);
+    }
+    
+    public int getPoints(){
+        return 0;
+    }
 }
