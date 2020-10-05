@@ -9,15 +9,9 @@ package uk.ac.tees.v8246953;
  *
  * @author v8246953
  */
-public abstract class Soldier implements Killable{
+public interface Killable {
     
-    private Faction faction = Faction.NOD;
+    public String kill();
     
-    public Soldier(String fac){
-        Faction faction = Faction.valueOf(fac);
-    }
-    
-    public int getPoints(){
-        return 0;
-    }
 }
+
